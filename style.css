@@ -13,31 +13,44 @@
 
 #header {
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 }
 
 #body {
     grid-row: 2 / 3;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
 }
 
 #footer {
     grid-row: 3 / 4;
     background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 }
 
 .left {
     display: inline;
     margin-left: 30px;
+    grid-column: 1 / 2;
+}
+
+.center {
+    display: inline;
+    grid-column: 2 / 3;
 }
 
 .right {
     display: inline;
-    margin-left: 100px;
+    grid-column: 3 / 4;
+    padding-left: 100px;
 }
 
 #logo {
-    width: 320px;
-    height: 132px;
+    width: 480px;
+    height: 210;
 }
 
 button {
@@ -52,4 +65,46 @@ button {
 button:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+#footer .center {
+    margin: 0 auto;
+}
+
+.btop {
+    color: #222;
+    padding: 15px 0 0 10px;
+}
+
+.bcen {
+    background-color: #f2f2f2;
+    height: 30px;
+    width: 150px;
+    margin: 10px 0 0 54px;
+}
+
+.bbot {
+    color: #70757a;
+    padding: 15px 20px 0 0;
+}
+
+#leaf {
+    height: 14px;
+    width: 14px;
+}
+
+#apps {
+    width: 40px;
+    height: 40px;
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+input {
+    width: 480px;
+    height: 34px;
+    border: 1px gray solid;
+    border-radius: 25px;
 }
